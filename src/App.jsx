@@ -105,7 +105,7 @@ const liveSchedule = [
 const details = [
   {
     title: 'Location',
-    text: 'Johannesburg, Gauteng - gathering across the city and online.',
+    text: '58 Observatory Avenue, Johannesburg, Gauteng 2198, South Africa.',
   },
   {
     title: 'Contact Line',
@@ -420,26 +420,26 @@ function App() {
             </button>
           </div>
         </nav>
-        {isMenuOpen ? <div className="mobile-backdrop" onClick={handleCloseMenu} /> : null}
-        <div className={`mobile-nav ${isMenuOpen ? 'open' : ''}`} id="mobile-nav">
-          <div className="mobile-nav-header">
-            <span>Menu</span>
-            <button className="menu-close" type="button" onClick={handleCloseMenu}>
-              Close
-            </button>
-          </div>
-          <div className="mobile-links">
-            {navItems.map((item) => (
-              <a key={item.id} href={`#${item.id}`} onClick={handleCloseMenu}>
-                {item.label}
-              </a>
-            ))}
-          </div>
-          <a className="primary" href="#live" onClick={handleCloseMenu}>
-            Watch live
-          </a>
-        </div>
       </header>
+      {isMenuOpen ? <div className="mobile-backdrop" onClick={handleCloseMenu} /> : null}
+      <div className={`mobile-nav ${isMenuOpen ? 'open' : ''}`} id="mobile-nav">
+        <div className="mobile-nav-header">
+          <span>Menu</span>
+          <button className="menu-close" type="button" onClick={handleCloseMenu}>
+            Close
+          </button>
+        </div>
+        <div className="mobile-links">
+          {navItems.map((item) => (
+            <a key={item.id} href={`#${item.id}`} onClick={handleCloseMenu}>
+              {item.label}
+            </a>
+          ))}
+        </div>
+        <a className="primary" href="#live" onClick={handleCloseMenu}>
+          Watch live
+        </a>
+      </div>
 
       <main>
         <section className="hero">
@@ -531,7 +531,7 @@ function App() {
               />
             </div>
             <div className="section-body">
-              <h3>Lead Pastor</h3>
+              <h3>Pastor Richard DIYOKA</h3>
               <p>
                 Our pastor equips the church with practical teaching, mentorship, and an open-door
                 approach to guidance and care.

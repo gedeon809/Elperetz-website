@@ -185,21 +185,20 @@
   position: fixed;
   inset: 0;
   background: rgba(15, 12, 8, 0.4);
-  z-index: 12;
+  z-index: 20;
 }
 
 .mobile-nav {
   position: fixed;
-  top: 0;
-  right: 0;
+  inset: 0 0 0 auto;
   width: min(320px, 90vw);
-  height: 100%;
+  height: 100dvh;
   background: #fffaf2;
   box-shadow: -20px 0 40px rgba(15, 12, 8, 0.2);
   transform: translateX(100%);
   transition: transform 0.3s ease;
-  z-index: 13;
-  padding: 24px;
+  z-index: 21;
+  padding: 24px 24px 32px;
   display: grid;
   gap: 18px;
   overflow-y: auto;
@@ -1014,13 +1013,31 @@ main {
 
 @media (max-width: 720px) {
   .hero {
-    padding: 0 6vw 70px;
+    padding: 0 6vw 64px;
   }
 
   .section.brand-backdrop::after {
     background-position: center 10%;
     background-size: min(220px, 60vw);
     opacity: 0.06;
+  }
+
+  .topbar {
+    padding: 18px 6vw 12px;
+  }
+
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+  }
+
+  .brand-title {
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+  }
+
+  .brand-subtitle {
+    display: none;
   }
 
   .top-strip {
@@ -1030,6 +1047,14 @@ main {
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
+  }
+
+  .hero-text h1 {
+    font-size: clamp(2rem, 7vw, 2.6rem);
+  }
+
+  .section {
+    padding: 64px 6vw;
   }
 
   .stream-embed iframe {
@@ -1042,6 +1067,26 @@ main {
 
   .quote-card {
     flex-basis: 240px;
+  }
+
+  .mobile-nav {
+    inset: 0;
+    width: 100vw;
+    height: 100dvh;
+    padding: calc(env(safe-area-inset-top) + 20px) 24px 24px;
+    border-radius: 0;
+  }
+
+  .mobile-nav-header {
+    font-size: 1rem;
+  }
+
+  .mobile-links a {
+    font-size: 1rem;
+  }
+
+  .mobile-backdrop {
+    background: rgba(15, 12, 8, 0.55);
   }
 
   .footer {
