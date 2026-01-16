@@ -97,9 +97,9 @@ const quoteSlides = [
 ]
 
 const liveSchedule = [
-  { title: 'Morning Prayer', time: '05:45 - 06:30' },
-  { title: 'Midweek Word', time: '18:00 - 19:00' },
-  { title: 'Sunday Service', time: '09:30 - 12:00' },
+  { title: 'Wednesday', time: '17:30 - 20:30' },
+  { title: 'Thursday', time: '17:30 - 20:30' },
+  { title: 'Sunday', time: '09:30 - 13:30' },
 ]
 
 const details = [
