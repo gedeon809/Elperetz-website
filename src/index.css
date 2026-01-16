@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Manrope:wght@300;400;600;700&display=swap');
+
+:root {
+  --ink: #14120d;
+  --muted: #524538;
+  --cream: #f6efe3;
+  --sand: #efe2cf;
+  --sun: #f0be63;
+  --clay: #b65a3f;
+  --olive: #28382f;
+  --jade: #1b6b5c;
+  --navy: #1b3552;
+  --gold: #d4a354;
+  --surface: #fff8ee;
+  --shadow: 0 24px 60px rgba(28, 23, 15, 0.18);
+  --font-title: 'Cinzel', 'Times New Roman', serif;
+  --font-body: 'Manrope', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  background: radial-gradient(circle at top, #fbf4e8 0%, #f2e6d4 45%, #ead8c0 100%);
+  color: var(--ink);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+img,
+video {
+  max-width: 100%;
+  display: block;
+  border-radius: 18px;
+}
+
+#root {
+  min-height: 100vh;
+}
